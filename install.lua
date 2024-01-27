@@ -92,6 +92,10 @@ function install()
     download("mqtt/tools.lua")
     bar(13 / total)
 
+    update("Creating examples folder...")
+    fs.makeDir("examples")
+    download("examples/cc_websocket.lua")
+
     update("Installation finished!")
 
     sleep(1)
